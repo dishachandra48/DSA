@@ -1,0 +1,24 @@
+class Solution {
+public:
+majorityElement(vector<int>& nums) {
+    int n = nums.size();
+        for(int val : nums){
+           int freq = 0;
+            for(int ell : nums){
+                if(ell == val){
+                    freq++;
+                }
+
+            }
+             if( freq > n/2){
+              return val;
+         }
+    
+        }
+        return -1;
+    }
+};
+
+
+
+ 
